@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx src/index.ts",
     "cli": "tsx src/cli.ts",
-    "test": "node --loader=tsx --test src/**/*.test.ts",
+    "test": "node --import=tsx --test src/**/*.test.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
