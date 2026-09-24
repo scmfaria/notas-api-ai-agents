@@ -1,7 +1,8 @@
 import { Task, TaskFilter } from '../domain/task.js';
-import { ITaskStore, taskStore } from '../data/taskStore.js';
+import { ITaskStore } from '../data/taskStore.js';
+import { fileTaskStore } from '../data/fileTaskStore.js';
 
-const store: ITaskStore = taskStore;
+const store: ITaskStore = fileTaskStore;
 
 export async function createTask(title: string): Promise<Task> {
   if (!title || !title.trim()) {
